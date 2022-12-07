@@ -1,0 +1,122 @@
+:root {
+    --body-bg: url('images/body-bg.png');
+    --font-color: #f2f3f4;
+    --font-size-header1: 4em;
+    --font-size-header2: 2.5em;
+    --font-size-normal: 1.5em;
+    --transition: all ease-in-out .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#bg {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--body-bg);
+}
+
+#bg-blur {
+    color: var(--font-color);
+    z-index: 2;
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 400vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+h1 {
+    font-size: var(--font-size-header1);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--font-size-header2);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+p, blockquote, li {
+    font-size: var(--font-size-normal);
+}
+
+ol {
+    padding-left: 30px;
+}
+
+.image-large {
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px rgba(0,0,0,.5);
+}
+
+.about {
+    padding: 20px;
+}
+
+.stack {
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.logo {
+    transition: var(--transition);
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgba(255,255,255,.1);
+    backdrop-filter: blur(15px);
+}
+
+.logo:hover {
+    background-color: rgba(255,255,255,.15);
+
+}
+
+.links {
+    padding: 50px;
+}
+
+.link {
+    font-size: var(--font-size-normal);
+    display: flex;
+    
+}
+
+.link > a {
+    transition: var(--transition);
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.link > a:hover {
+    text-decoration: underline;
+}
+
+.link > .caption {
+    width: 100px;
+    max-width: 100px;
+}

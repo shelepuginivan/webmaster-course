@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    z-index: 1;
+}
+
+.headers {
+    width: 80%;
+    margin-top: 10px;
+    margin-inline: auto;
+    border-radius: 10px;
+    z-index: 1;
+    background: rgba(170, 170, 170, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.photos {
+    height: 70vh;
+    width: 80%;
+    margin-top: 20px;
+    margin-inline: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.image {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: min-content;
+    outline: 1px solid #000;
+    -webkit-box-shadow: 4px 4px 21px 13px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 21px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 21px 13px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    width: auto;
+    height: 200px;
+}
+
+.image:hover {
+    z-index: 2;
+}
+
+#i1 {
+    top: 35px;
+    left: 255px;
+}
+
+#i2 {
+    top: 65px;
+    left: 305px;
+}
+
+#i3 {
+    top: 95px;
+    left: 355px;
+}
+
+#i4 {
+    top: 125px;
+    left: 405px;
+}
+
+#i5 {
+    top: 155px;
+    left: 455px;
+}
+
+#i6 {
+    top: 185px;
+    left: 505px;
+}
+
+nav {
+    margin-top: 20px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.link {
+    color: #fff;
+    margin-inline: 10px;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}

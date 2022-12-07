@@ -1,0 +1,88 @@
+:root {
+    --bg1: url('backgrounds/bg1.png');
+    --bg2: url('backgrounds/bg2.jpg');
+    --bg3: url('backgrounds/bg3.jpg');
+    --transparent: rgba(255,255,255,.35);
+    --transparent-lighter: rgba(255,255,255,.6)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+#bg1 {
+    background-image: var(--bg1);
+}
+
+
+#bg2 {
+    background-image: var(--bg2);
+
+}
+
+#bg3 {
+    background-image: var(--bg3);
+
+}
+
+.bg {
+    width: 100%;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+h1 {
+    color: #fff;
+    background: #000;
+    padding-top: 35px;
+    padding-bottom: 20px;    
+}
+
+
+h2 {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(var(--transparent-lighter), var(--transparent) 75%);
+    backdrop-filter: blur(10px);
+}
+
+h1, h2 {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.container {
+    padding: 40px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--transparent);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+kbd {
+    font-family: Courier, monospace;
+    background-color: #bbb;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+dt {
+    font-weight: bolder;
+}
+
+dd {
+    margin-bottom: 20px;
+}

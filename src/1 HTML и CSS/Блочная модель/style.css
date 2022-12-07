@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+#b1 {
+    width: 500px;
+    height: 500px;
+    margin: calc(50vh - 250px) auto auto;
+    border: 3px dotted #000;
+    padding: 25px;
+}
+
+#b2, #b3, #b4, #b5, #b6, #b7 {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+#b2 {
+    border: 3px dashed red;
+}
+
+#b3 {
+    border: 3px double #666;
+}
+
+#b4 {
+    border: 3px groove #666
+}
+
+#b5 {
+    border: 3px ridge red
+}
+
+#b6 {
+    border: 3px inset #666;
+}
+
+#b7 {
+    border: 3px outset #666;
+}
